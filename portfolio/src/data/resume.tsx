@@ -8,10 +8,10 @@ export const DATA = {
   location: "San Francisco, CA",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
   description:
-    "Software Engineer turned Entrepreneur. I love building things which really help people. Very active on Twitter.",
+    "Software Engineer turned Entrepreneur. I love building things which really help people.",
   summary:
-    "I'm software engineer who is more into building and scaling SaaS businesses and helping People.In the past, [  I pursued a degree in computer science ](/#education), [Currently Working as full time employee at big Fintech company in Mumbai].",
-  avatarUrl: "",
+    "I'm software engineer who is more into building and scaling SaaS businesses and helping People.In the past, [  I pursued a degree in computer science ](/#education), [Currently Working as full time employee at big Fintech company in Mumbai](/#work).",
+  avatarUrl:"/me2.png",
   skills: [
     "React",
     "Next.js",
@@ -77,12 +77,12 @@ export const DATA = {
 
   work: [
     {
-      company: "Atomic Finance",
+      company: "WorldLine Global Services",
       href: "https://atomic.finance",
       badges: [],
-      location: "Remote",
-      title: "Bitcoin Protocol Engineer",
-      logoUrl: "/atomic.png",
+      location: "On-site",
+      title: "Fullstack Developer",
+      logoUrl: "/Worldline2.jpg",
       start: "Aug 2022",
       end: "Present",
       description:
@@ -94,7 +94,7 @@ export const DATA = {
       school: "AIKTC-Kalsekar Technical Campus",
       href: "https://buildspace.so",
       degree: "Bachelor's of Computer engineering",
-      logoUrl: "/buildspace.jpg",
+      logoUrl: "/Engineering.jpeg",
       start: "2018",
       end: "2022",
     },
@@ -102,7 +102,7 @@ export const DATA = {
       school: "Chembur Karnataka Jr. College",
       href: "https://uwaterloo.ca",
       degree: "Higher Secondary Certificate (HSC)",
-      logoUrl: "/waterloo.png",
+      logoUrl: "/College.jfif",
       start: "2015",
       end: "2017",
     },
@@ -110,7 +110,7 @@ export const DATA = {
       school: "Veer Savarkar English High School",
       href: "https://uwaterloo.ca",
       degree: "Secondary School Certificate (SSC)",
-      logoUrl: "/waterloo.png",
+      logoUrl: "/School2.jpg",
       start: "2005",
       end: "2015",
     },

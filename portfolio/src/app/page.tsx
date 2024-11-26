@@ -9,7 +9,7 @@ import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
 import SparklesText from "@/components/ui/sparkles-text";
-import PulsatingButton from "@/components/ui/pulsating-button";
+import BlurIn from "@/components/ui/blur-in";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -20,12 +20,6 @@ export default function Page() {
         <div className="mx-auto w-full max-w-2xl space-y-8">
           <div className="gap-2 flex justify-between">
             <div className="flex-col flex flex-1">
-              {/* <BlurFadeText
-                delay={BLUR_FADE_DELAY}
-                className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none mb-2"
-                yOffset={8}
-                text={`Hi, I'm ${DATA.name.split(" ")[0]} 👋`}
-              /> */}
               <SparklesText text={`Hi, I'm ${DATA.name.split(" ")[0]} 👋`} className="mb-3 text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none" />
               <BlurFadeText
                 className="max-w-[600px] md:text-xl"
@@ -109,7 +103,12 @@ export default function Page() {
             {DATA.skills.map((skill, id) => (
               <BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
                 {/* <Badge key={skill}>{skill}</Badge> */}
-                <PulsatingButton key={skill}>{skill}</PulsatingButton>
+                {/* <  key={skill}>{skill}</> */}
+                <BlurIn
+                key={skill}
+      word={skill}
+      className="text-sm font-bold text-gray-800 dark:text-white "
+    />
               </BlurFade>
             ))}
           </div>
